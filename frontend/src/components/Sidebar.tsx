@@ -131,7 +131,7 @@ export default function Sidebar({ state, onRouteCalculated, routeDetails }: Side
         {activeTab === 'main' && (
           <>
             {/* Global Metrics */}
-            <div className="glass-panel" style={{ padding: '16px', display: 'flex', justifyContent: 'space-between' }}>
+            <div className="glass-panel" style={{ padding: '16px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '20px' }}>
               <div>
                 <p className="text-secondary" style={{ fontSize: '12px' }}>TOTAL CROWD</p>
                 <h2 className="text-cyan font-mono" style={{ fontSize: '28px' }}>{totalCrowd.toLocaleString()}</h2>

@@ -17,8 +17,6 @@ def main():
     # Feature Engineering: We want to predict Total Visitors based on the Year
     df['Total_Visitors'] = df['Domestic_Visitors'] + df['International_Visitors']
     
-    # We filter for Ujjain if the dataset contains multiple locations, but usually Mahakumbh is Prayagraj/Haridwar/Ujjain/Nashik
-    # We will use all data but encode location if needed. Let's simplify and just predict based on Year for Ujjain.
     df_ujjain = df[df['Location'].str.contains('Ujjain', case=False, na=False)].copy()
     if df_ujjain.empty:
         df_ujjain = df # fallback
