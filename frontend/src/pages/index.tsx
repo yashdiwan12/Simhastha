@@ -19,9 +19,9 @@ export default function Dashboard() {
         <title>Unified Control Room | Mahakumbh 2028</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <main style={{ display: 'flex', height: '100vh', width: '100vw', background: 'var(--bg-dark)' }}>
-        {/* Sidebar Section (30%) */}
-        <div style={{ flex: 3, minWidth: '350px', background: 'var(--bg-dark)', borderRight: '1px solid var(--glass-border)', zIndex: 10 }}>
+      <main className="layout-container">
+        {/* Sidebar Section */}
+        <div className="sidebar-container">
           <Sidebar 
             state={globalState} 
             onRouteCalculated={setActiveRoute}
@@ -29,8 +29,8 @@ export default function Dashboard() {
           />
         </div>
 
-        {/* Map Section (70%) */}
-        <div style={{ flex: 7, position: 'relative' }}>
+        {/* Map Section */}
+        <div className="map-container">
           <MapWithNoSSR 
              onStateUpdate={setGlobalState} 
              activeRoute={activeRoute}
