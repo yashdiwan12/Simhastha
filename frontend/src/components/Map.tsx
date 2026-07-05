@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Wrapper } from '@googlemaps/react-wrapper';
 
-const WS_URL = process.env.NEXT_PUBLIC_WS_URL || 'wss://simhastha-backend.onrender.com/api/v1/stream';
+const WS_URL = process.env.NEXT_PUBLIC_WS_URL || 'wss://mahakumbh-backend.onrender.com/api/v1/stream';
 
 // Dark "Neural Noir" Map Style
 const mapStyles = [

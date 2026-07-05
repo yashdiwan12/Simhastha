@@ -310,7 +310,7 @@ export default function SimhasthaPage() {
 
   // Fetch insights
   useEffect(() => {
-    let api = process.env.NEXT_PUBLIC_API_URL || 'https://simhastha-backend.onrender.com/api';
+    let api = process.env.NEXT_PUBLIC_API_URL || 'https://mahakumbh-backend.onrender.com/api';
     if (api.endsWith('/')) api = api.slice(0, -1);
     if (!api.endsWith('/api')) api = `${api}/api`;
     fetch(`${api}/insights`).then(r => r.json()).then(data => {
@@ -329,7 +329,7 @@ export default function SimhasthaPage() {
     if (!sourceId || !targetId) return;
     setLoadingRoute(true);
     try {
-      let api = process.env.NEXT_PUBLIC_API_URL || 'https://simhastha-backend.onrender.com/api';
+      let api = process.env.NEXT_PUBLIC_API_URL || 'https://mahakumbh-backend.onrender.com/api';
       if (api.endsWith('/')) api = api.slice(0, -1);
       if (!api.endsWith('/api')) api = `${api}/api`;
       const res = await fetch(`${api}/route?source_id=${sourceId}&target_id=${targetId}`);

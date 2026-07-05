@@ -157,7 +157,7 @@ export default function Sidebar({ state, onRouteCalculated, routeDetails }: Side
 
   // Fetch insights
   useEffect(() => {
-    let apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://simhastha-backend.onrender.com/api';
+    let apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://mahakumbh-backend.onrender.com/api';
     if (apiUrl.endsWith('/')) apiUrl = apiUrl.slice(0, -1);
     if (!apiUrl.endsWith('/api')) apiUrl = `${apiUrl}/api`;
     fetch(`${apiUrl}/insights`)
@@ -177,7 +177,7 @@ export default function Sidebar({ state, onRouteCalculated, routeDetails }: Side
     if (!sourceId || !targetId) return;
     setLoadingRoute(true);
     try {
-      let apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://simhastha-backend.onrender.com/api';
+      let apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://mahakumbh-backend.onrender.com/api';
       if (apiUrl.endsWith('/')) apiUrl = apiUrl.slice(0, -1);
       if (!apiUrl.endsWith('/api')) apiUrl = `${apiUrl}/api`;
       const res = await fetch(`${apiUrl}/route?source_id=${sourceId}&target_id=${targetId}`);
