@@ -6,7 +6,7 @@
 Health check endpoint. Returns `{"status": "ok"}`.
 
 ### `GET /api/insights`
-Returns historical Simhastha data, the 2028 AI prediction, and historical risks/educational advice.
+Returns historical Simhastha data, the 2028 prediction, and historical risks/educational advice.
 
 ### `GET /api/locations`
 Lists all seeded locations (Ghats, Transit Hubs, etc.) from the SQLite database.

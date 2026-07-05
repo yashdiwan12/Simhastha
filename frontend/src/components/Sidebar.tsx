@@ -167,7 +167,7 @@ export default function Sidebar({ state, onRouteCalculated, routeDetails }: Side
           name: d.Year.toString(),
           visitors: d.Total_Visitors / 1000000
         }));
-        chartData.push({ name: '2028 (AI)', visitors: data.prediction_2028 / 1000000 });
+        chartData.push({ name: '2028 (Projected)', visitors: data.prediction_2028 / 1000000 });
         setInsights({ chartData, historical_risks: data.historical_risks || [] });
       })
       .catch(console.error);
@@ -441,7 +441,7 @@ export default function Sidebar({ state, onRouteCalculated, routeDetails }: Side
             <div className="glass-panel" style={{ padding: '16px' }}>
               <div className="section-header">
                 <span className="icon-wrap"><TrendingUp size={16} /></span>
-                AI Historical Insights
+                Historical Insights
               </div>
               <p style={{ fontSize: '11px', color: 'var(--text-secondary)', marginBottom: '12px' }}>
                 {t('visitorInflux', lang)}
@@ -469,7 +469,7 @@ export default function Sidebar({ state, onRouteCalculated, routeDetails }: Side
                   </ResponsiveContainer>
                 ) : (
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
-                    <p style={{ color: 'var(--text-muted)', fontSize: '12px' }}>Loading AI Projection...</p>
+                    <p style={{ color: 'var(--text-muted)', fontSize: '12px' }}>Loading Projection...</p>
                   </div>
                 )}
               </div>

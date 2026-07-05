@@ -60,7 +60,7 @@ const TX: Record<string, Record<string, string>> = {
   calculating: { en: 'Calculating...', hi: 'गणना हो रही है...', sa: 'गण्यते...', bn: 'গণনা হচ্ছে...', te: 'లెక్కిస్తోంది...', ta: 'கணக்கிடுகிறது...', mr: 'गणना...', gu: 'ગણના...', kn: 'ಲೆಕ್ಕಿಸುತ್ತಿದೆ...', ml: 'കണക്കാക്കുന്നു...', pa: 'ਗਣਨਾ...', ur: 'حساب...', ne: 'गणना...', zh: '计算中...', ja: '計算中...', ar: 'جاري الحساب...', es: 'Calculando...', fr: 'Calcul...', de: 'Berechne...', ru: 'Вычисляю...' },
   dismissAlarm: { en: 'Dismiss', hi: 'बंद करें', sa: 'समापयतु', bn: 'বাতিল', te: 'విస్మరించు', ta: 'நிராகரி', mr: 'बंद करा', gu: 'બંધ', kn: 'ತಳ್ಳಿಹಾಕು', ml: 'തള്ളുക', pa: 'ਰੱਦ', ur: 'مسترد', ne: 'खारेज', zh: '忽略', ja: '閉じる', ar: 'تجاهل', es: 'Descartar', fr: 'Ignorer', de: 'Schließen', ru: 'Закрыть' },
   deployNDRF: { en: 'Deploy NDRF Team', hi: 'NDRF टीम भेजें', sa: 'NDRF दलं प्रेषयतु', bn: 'NDRF টিম পাঠান', te: 'NDRF బృందాన్ని మోహరించు', ta: 'NDRF குழு அனுப்பு', mr: 'NDRF टीम पाठवा', gu: 'NDRF ટીમ', kn: 'NDRF ತಂಡ', ml: 'NDRF ടീം', pa: 'NDRF ਟੀਮ', ur: 'NDRF ٹیم', ne: 'NDRF टोली', zh: '部署NDRF', ja: 'NDRF派遣', ar: 'نشر فريق NDRF', es: 'Desplegar NDRF', fr: 'Déployer NDRF', de: 'NDRF einsetzen', ru: 'Развернуть NDRF' },
-  assistantTitle: { en: 'Simhastha AI Assistant', hi: 'Simhastha AI', sa: 'Simhastha AI', bn: 'Simhastha AI', te: 'Simhastha AI', ta: 'Simhastha AI', mr: 'Simhastha AI', gu: 'Simhastha AI', kn: 'Simhastha AI', ml: 'Simhastha AI', pa: 'Simhastha AI', ur: 'Simhastha AI', ne: 'Simhastha AI', zh: 'Simhastha AI', ja: 'Simhastha AI', ar: 'Simhastha AI', es: 'Simhastha AI', fr: 'Simhastha AI', de: 'Simhastha AI', ru: 'Simhastha AI' },
+  assistantTitle: { en: 'Simhastha Assistant', hi: 'Simhastha Assistant', sa: 'Simhastha Assistant', bn: 'Simhastha Assistant', te: 'Simhastha Assistant', ta: 'Simhastha Assistant', mr: 'Simhastha Assistant', gu: 'Simhastha Assistant', kn: 'Simhastha Assistant', ml: 'Simhastha Assistant', pa: 'Simhastha Assistant', ur: 'Simhastha Assistant', ne: 'Simhastha Assistant', zh: 'Simhastha Assistant', ja: 'Simhastha Assistant', ar: 'Simhastha Assistant', es: 'Simhastha Assistant', fr: 'Simhastha Assistant', de: 'Simhastha Assistant', ru: 'Simhastha Assistant' },
   assistantPlaceholder: { en: 'Ask about safety, navigation...', hi: 'सुरक्षा, दिशा आदि के बारे में पूछें...', sa: 'सुरक्षा, दिशा इत्यादेः विषये पृच्छतु...', bn: 'নিরাপত্তা, দিকনির্দেশনা সম্পর্কে জিজ্ঞাসা করুন...', te: 'భద్రతా, దిశల గురించి అడగండి...', ta: 'பாதுகாப்பு, திசைகள் பற்றி கேளுங்கள்...', mr: 'सुरक्षा, दिशा बद्दल विचारा...', gu: 'સુરક્ષા, દિશા વિશે પૂછો...', kn: 'ಸುರಕ್ಷತೆ, ದಿಕ್ಕುಗಳ ಬಗ್ಗೆ ಕೇಳಿ...', ml: 'സുരക്ഷ, ദിശ എന്നിവയെക്കുറിച്ച് ചോദിക്കുക...', pa: 'ਸੁਰੱਖਿਆ, ਦਿਸ਼ਾਵਾਂ ਬਾਰੇ ਪੁੱਛੋ...', ur: 'حفاظت، سمت کے بارے میں پوچھیں...', ne: 'सुरक्षा, दिशा बारे सोध्नुहोस्...', zh: '询问安全、导航...', ja: '安全、ナビゲーションについて尋ねる...', ar: 'اسأل عن الأمان، الملاحة...', es: 'Pregunta sobre seguridad, navegación...', fr: 'Demandez sur la sécurité, navigation...', de: 'Fragen Sie nach Sicherheit, Navigation...', ru: 'Спросите о безопасности, навигации...' },
   voiceListening: { en: 'Listening...', hi: 'सुन रहा हूँ...', sa: 'शृणोमि...', bn: 'শুনছি...', te: 'వింటున్నాను...', ta: 'கேட்கிறது...', mr: 'ऐकत आहे...', gu: 'સાંભળી રહ્યો છું...', kn: 'ಆಲಿಸುತ್ತಿದೆ...', ml: 'കേൾക്കുന്നു...', pa: 'ਸੁਣ ਰਿਹਾ ਹੈ...', ur: 'سن رہا ہوں...', ne: 'सुन्दैछु...', zh: '聆听中...', ja: '聞いています...', ar: 'يستمع...', es: 'Escuchando...', fr: 'Écoute...', de: 'Höre zu...', ru: 'Слушаю...' },
   allClear: { en: 'All sectors nominal.', hi: 'सभी क्षेत्र सुरक्षित।', sa: 'सर्वे क्षेत्राः सुरक्षिताः।', bn: 'সমস্ত সেক্টর স্বাভাবিক।', te: 'అన్ని రంగాలు సాధారణం.', ta: 'அனைத்து பகுதிகளும் சரி.', mr: 'सर्व विभाग ठीक आहेत.', gu: 'તમામ ક્ષેત્ર સ્બ ઠીક.', kn: 'ಎಲ್ಲ ವಲಯಗಳು ಸ್ಪಷ್ಟ.', ml: 'എല്ലാ മേഖലകളും ശരി.', pa: 'ਸਾਰੇ ਸੈਕਟਰ ਠੀਕ ਹਨ।', ur: 'تمام شعبے ٹھیک ہیں۔', ne: 'सबै क्षेत्र सामान्य।', zh: '所有区域正常。', ja: '全エリア正常。', ar: 'جميع القطاعات طبيعية.', es: 'Todos los sectores normales.', fr: 'Tous secteurs normaux.', de: 'Alle Sektoren normal.', ru: 'Все секторы в норме.' },
@@ -183,10 +183,10 @@ export default function SimhasthaPage() {
     if (l.includes('safe') || l.includes('crowd')) return 'Currently, the Simhastha sector density is being actively monitored. Average safety across the network is high. Please follow diversion routes if you see Red Alarms.';
     if (l.includes('medic') || l.includes('hospital') || l.includes('health') || l.includes('doctor')) return 'Medical camps are stationed every 2km. The nearest active medical camp is Sector 4 Triage. For immediate emergency, use the SOS beacon on your Smart Pilgrim ID.';
     if (l.includes('navigat') || l.includes('route') || l.includes('map') || l.includes('go')) return 'You can use the Route Planner tool below to find the safest path between sectors. Active routes are highlighted in green.';
-    if (l.includes('lost') || l.includes('found') || l.includes('missing')) return 'If you have lost someone, please report to the nearest Khoya-Paya (Lost & Found) centre. They are integrated with our AI camera network to help locate missing pilgrims.';
+    if (l.includes('lost') || l.includes('found') || l.includes('missing')) return 'If you have lost someone, please report to the nearest Khoya-Paya (Lost & Found) centre. They are integrated with our smart camera network to help locate missing pilgrims.';
     if (l.includes('accomodat') || l.includes('stay') || l.includes('tent')) return 'Tent cities are available in Sectors 1, 3, and 5. Premium bookings are managed via the main portal, and free dormitories are subject to live capacity.';
     if (l.includes('event') || l.includes('snan') || l.includes('bath')) return 'The next major Shahi Snan (Royal Bathing) is scheduled for tomorrow morning. Expect extremely high footfall in the Sangam sector from 3:00 AM onwards.';
-    return 'I am an AI Assistant. I am here to ensure your spiritual journey is safe and smooth. Please ask me specifically about safety, navigation, medical camps, or events.';
+    return 'I am a digital Assistant. I am here to ensure your spiritual journey is safe and smooth. Please ask me specifically about safety, navigation, medical camps, or events.';
   };
 
   const handleChatSubmit = () => {
@@ -315,9 +315,14 @@ export default function SimhasthaPage() {
     if (!api.endsWith('/api')) api = `${api}/api`;
     fetch(`${api}/insights`).then(r => r.json()).then(data => {
       const chartData = data.historical_data.map((d: any) => ({ name: d.Year.toString(), visitors: d.Total_Visitors / 1000000 }));
-      chartData.push({ name: '2028 (AI)', visitors: data.prediction_2028 / 1000000 });
+      chartData.push({ name: '2028 (Projected)', visitors: data.prediction_2028 / 1000000 });
       setInsights({ chartData, historical_risks: data.historical_risks || [] });
     }).catch(console.error);
+  }, []);
+
+  // Scroll to top on page load
+  useEffect(() => {
+    window.scrollTo(0, 0);
   }, []);
 
   const calculateRoute = async () => {
@@ -352,8 +357,8 @@ export default function SimhasthaPage() {
   return (
     <>
       <Head>
-        <title>ॐ Simhastha — AI Command Centre</title>
-        <meta name="description" content="AI-powered crowd management and pilgrim safety for Simhastha" />
+        <title>ॐ Simhastha — Command Centre</title>
+        <meta name="description" content="Smart crowd management and pilgrim safety for Simhastha" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -481,7 +486,7 @@ export default function SimhasthaPage() {
               </div>
               <div className="hero-stats-row">
                 <div className="hero-stat"><span className="hero-stat-value">45M+</span><span className="hero-stat-label">Expected Pilgrims</span></div>
-                <div className="hero-stat"><span className="hero-stat-value">AI</span><span className="hero-stat-label">Real-time Guard</span></div>
+                <div className="hero-stat"><span className="hero-stat-value">24/7</span><span className="hero-stat-label">Real-time Guard</span></div>
                 <div className="hero-stat"><span className="hero-stat-value">24/7</span><span className="hero-stat-label">Live Monitoring</span></div>
               </div>
             </div>
@@ -534,10 +539,10 @@ export default function SimhasthaPage() {
             </p>
             <div className="glass-card" style={{ padding: '24px', marginTop: '24px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px', fontWeight: 700, fontSize: '15px' }}>
-                <TrendingUp size={16} color="var(--saffron)" /> AI Historical Pilgrim Projection
+                <TrendingUp size={16} color="var(--saffron)" /> Historical Pilgrim Projection
               </div>
               <p style={{ fontSize: '12px', color: 'var(--text-muted)', marginBottom: '16px' }}>
-                Visitor influx (Millions) — Historical + AI 2028 forecast
+                Visitor influx (Millions) — Historical + 2028 forecast
               </p>
               <div style={{ height: 220 }}>
                 {insights ? (
@@ -557,7 +562,7 @@ export default function SimhasthaPage() {
                     </AreaChart>
                   </ResponsiveContainer>
                 ) : (
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', color: 'var(--text-muted)', fontSize: 13 }}>Loading AI Projection...</div>
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', color: 'var(--text-muted)', fontSize: 13 }}>Loading Projection...</div>
                 )}
               </div>
             </div>
@@ -603,7 +608,7 @@ export default function SimhasthaPage() {
             <div className="glass-card" style={{ marginTop: '32px', display: 'flex', flexDirection: 'column', height: '400px', overflow: 'hidden' }}>
               <div style={{ padding: '16px 20px', borderBottom: '1px solid var(--border-subtle)', display: 'flex', alignItems: 'center', gap: '12px', background: 'rgba(255,184,48,0.05)' }}>
                 <Bot size={20} color="var(--saffron)" />
-                <strong style={{ fontSize: '15px' }}>Simhastha AI</strong>
+                <strong style={{ fontSize: '15px' }}>Simhastha Assistant</strong>
               </div>
 
               <div style={{ flex: 1, overflowY: 'auto', padding: '20px', display: 'flex', flexDirection: 'column', gap: '16px' }}>

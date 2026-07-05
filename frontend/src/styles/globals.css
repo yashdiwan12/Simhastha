@@ -424,7 +424,7 @@ h1, h2, h3, h4, p { margin: 0; }
 .status-dot.warn     { background: var(--warn);   box-shadow: 0 0 0 3px rgba(217,119,6,0.2); animation: statusPulse 2s infinite; }
 .status-dot.critical { background: var(--danger); box-shadow: 0 0 0 3px rgba(220,38,38,0.2); animation: statusPulse 0.7s infinite; }
 
-/* ── "Ask AI" style button on sector ── */
+/* ── "Ask Assistant" style button on sector ── */
 .ask-ai-btn {
   width: 100%;
   margin-top: 14px;

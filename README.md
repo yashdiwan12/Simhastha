@@ -1,8 +1,8 @@
-# 🕉️ Simhastha — AI Crowd Management Platform
+# 🕉️ Simhastha — Crowd Management Platform
 
-> An autonomous, AI-powered crowd routing and safety control room for the world's largest human gathering.
+> An autonomous, smart crowd routing and safety control room for the world's largest human gathering.
 
-Built with **Next.js**, **FastAPI**, **Google Maps API**, and **Machine Learning** — this platform monitors real-time crowd density across major Ghats in Ujjain, autonomously reroutes pilgrims away from stampede-risk zones, and provides a multilingual **AI Assistant** alongside a **Smart Pilgrim Pass Generator**.
+Built with **Next.js**, **FastAPI**, **Google Maps API**, and **Machine Learning** — this platform monitors real-time crowd density across major Ghats in Ujjain, autonomously reroutes pilgrims away from stampede-risk zones, and provides a multilingual **Digital Assistant** alongside a **Smart Pilgrim Pass Generator**.
 
 ---
 
@@ -10,7 +10,7 @@ Built with **Next.js**, **FastAPI**, **Google Maps API**, and **Machine Learning
 
 | Feature | Description |
 |---------|-------------|
-| **AI Routing Engine** | A* algorithm with dynamic edge weights. Benchmarked at **10.85ms** on a 5,000-node city graph. |
+| **Smart Routing Engine** | A* algorithm with dynamic edge weights. Benchmarked at **10.85ms** on a 5,000-node city graph. |
 | **Autonomous Rerouting** | If a sector's Safety Index drops below 30%, the engine automatically applies ∞ cost and reroutes. |
 | **ML Prediction** | Gradient Boosting Regressor trained on 40+ years of Kumbh data predicts **39.3M visitors** for 2028. |
 | **Google Maps Integration** | Road-snapped routes via Directions API, live Traffic Layer overlay, and walking ETA/distance. |
@@ -18,7 +18,7 @@ Built with **Next.js**, **FastAPI**, **Google Maps API**, and **Machine Learning
 | **Critical Alert System** | Aggressive toast notifications when stampede risk is detected. |
 | **Safety Index** | Dynamic score (40–96%) computed from crowd density (70%) + weather hazard (30%). |
 | **Historical Insights** | Educational panel with past stampede data to help pilgrims plan safer visits. |
-| **Simhastha AI Assistant** | Multilingual Chatbot (Text & Voice) to instantly answer pilgrim queries regarding safety, navigation, and medical camps. |
+| **Simhastha Assistant** | Multilingual Chatbot (Text & Voice) to instantly answer pilgrim queries regarding safety, navigation, and medical camps. |
 | **Smart Pilgrim Pass** | Generates secure digital entry passes with embedded QR codes, emergency contacts, and personalized safety data. |
 
 ---
@@ -189,5 +189,5 @@ simhastha/
 ---
 
 <p align="center">
-  Built with ❤️ for Simhastha — Protecting millions of pilgrims with AI.
+  Built with ❤️ for Simhastha — Protecting millions of pilgrims with technology.
 </p>

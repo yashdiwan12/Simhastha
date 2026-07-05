@@ -3,7 +3,7 @@
 ## The Tech Stack
 *   **Frontend**: Next.js 13, React 18, Google Maps API, Recharts
 *   **Backend**: FastAPI, Python 3.11+, WebSockets, SQLite + SQLAlchemy
-*   **AI/ML**: Scikit-Learn (Gradient Boosting Regressor), NetworkX (A* Routing)
+*   **Machine Learning**: Scikit-Learn (Gradient Boosting Regressor), NetworkX (A* Routing)
 
 ## System Flow
 1. **Data Intake**: The backend loads node/edge structures from SQLite. 
