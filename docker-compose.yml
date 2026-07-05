@@ -6,7 +6,7 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./Mahakumbh_Complete_Dataset.csv:/app/../Mahakumbh_Complete_Dataset.csv
+      - ./Simhastha_Complete_Dataset.csv:/app/../Simhastha_Complete_Dataset.csv
 
   frontend:
     build: ./frontend

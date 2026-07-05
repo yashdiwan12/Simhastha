@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Wrapper } from '@googlemaps/react-wrapper';
 
-const WS_URL = process.env.NEXT_PUBLIC_WS_URL || 'wss://mahakumbh-backend.onrender.com/api/v1/stream';
+const WS_URL = process.env.NEXT_PUBLIC_WS_URL || 'wss://simhastha-backend.onrender.com/api/v1/stream';
 
 // Dark "Neural Noir" Map Style
 const mapStyles = [
@@ -54,9 +54,10 @@ interface InnerMapProps {
   onStateUpdate: (state: any) => void;
   activeRoute: string[];
   onRouteDetailsUpdate?: (details: any) => void;
+  zoom?: number;
 }
 
-function InnerMap({ onStateUpdate, activeRoute, onRouteDetailsUpdate }: InnerMapProps) {
+function InnerMap({ onStateUpdate, activeRoute, onRouteDetailsUpdate, zoom = 13 }: InnerMapProps) {
   const ref = useRef<HTMLDivElement>(null);
   const mapRef = useRef<google.maps.Map | null>(null);
   const nodesRef = useRef<{ [id: string]: google.maps.Circle }>({});
@@ -71,7 +72,7 @@ function InnerMap({ onStateUpdate, activeRoute, onRouteDetailsUpdate }: InnerMap
     if (ref.current && !mapRef.current) {
       mapRef.current = new window.google.maps.Map(ref.current, {
         center: { lat: 23.1765, lng: 75.7885 },
-        zoom: 13,
+        zoom: zoom,
         styles: mapStyles,
         disableDefaultUI: true,
       });
@@ -104,6 +105,12 @@ function InnerMap({ onStateUpdate, activeRoute, onRouteDetailsUpdate }: InnerMap
       });
     }
   }, []);
+
+  useEffect(() => {
+    if (mapRef.current && zoom) {
+      mapRef.current.setZoom(zoom);
+    }
+  }, [zoom]);
 
   useEffect(() => {
     if (!mapRef.current) return;
@@ -275,11 +282,11 @@ function InnerMap({ onStateUpdate, activeRoute, onRouteDetailsUpdate }: InnerMap
   return <div ref={ref} style={{ width: '100%', height: '100%' }} />;
 }
 
-export default function Map({ onStateUpdate, activeRoute, onRouteDetailsUpdate }: InnerMapProps) {
+export default function Map({ onStateUpdate, activeRoute, onRouteDetailsUpdate, zoom }: InnerMapProps) {
   const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || '';
   return (
     <Wrapper apiKey={apiKey}>
-      <InnerMap onStateUpdate={onStateUpdate} activeRoute={activeRoute} onRouteDetailsUpdate={onRouteDetailsUpdate} />
+      <InnerMap onStateUpdate={onStateUpdate} activeRoute={activeRoute} onRouteDetailsUpdate={onRouteDetailsUpdate} zoom={zoom} />
     </Wrapper>
   );
 }

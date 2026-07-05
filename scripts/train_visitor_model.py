@@ -6,7 +6,7 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error
 import pickle
 import os
 
-DATASET_PATH = '../Mahakumbh_Complete_Dataset.csv'
+DATASET_PATH = '../Simhastha_Complete_Dataset.csv'
 MODEL_SAVE_PATH = '../backend/app/core/visitor_model.pkl'
 
 def main():
@@ -51,7 +51,7 @@ def main():
     
     print(f"\nWinning Model: {best_name}")
     
-    # Predict for 2028 (The upcoming Mahakumbh)
+    # Predict for 2028 (The upcoming Simhastha)
     pred_2028 = best_model.predict([[2028]])[0]
     print(f"Predicted Total Visitors for 2028: {pred_2028:,.0f}")
     

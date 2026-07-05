@@ -1,8 +1,8 @@
-# 🕉️ Mahakumbh 2028 — AI Crowd Management Platform
+# 🕉️ Simhastha — AI Crowd Management Platform
 
 > An autonomous, AI-powered crowd routing and safety control room for the world's largest human gathering.
 
-Built with **Next.js**, **FastAPI**, **Google Maps API**, and **Machine Learning** — this platform monitors real-time crowd density across major Ghats in Ujjain and autonomously reroutes pilgrims away from stampede-risk zones using a dynamic **A\* Search Algorithm**.
+Built with **Next.js**, **FastAPI**, **Google Maps API**, and **Machine Learning** — this platform monitors real-time crowd density across major Ghats in Ujjain, autonomously reroutes pilgrims away from stampede-risk zones, and provides a multilingual **AI Assistant** alongside a **Smart Pilgrim Pass Generator**.
 
 ---
 
@@ -18,6 +18,8 @@ Built with **Next.js**, **FastAPI**, **Google Maps API**, and **Machine Learning
 | **Critical Alert System** | Aggressive toast notifications when stampede risk is detected. |
 | **Safety Index** | Dynamic score (40–96%) computed from crowd density (70%) + weather hazard (30%). |
 | **Historical Insights** | Educational panel with past stampede data to help pilgrims plan safer visits. |
+| **Simhastha AI Assistant** | Multilingual Chatbot (Text & Voice) to instantly answer pilgrim queries regarding safety, navigation, and medical camps. |
+| **Smart Pilgrim Pass** | Generates secure digital entry passes with embedded QR codes, emergency contacts, and personalized safety data. |
 
 ---
 
@@ -44,8 +46,8 @@ Built with **Next.js**, **FastAPI**, **Google Maps API**, and **Machine Learning
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/mahakumbh-crowd-management.git
-cd mahakumbh-crowd-management
+git clone https://github.com/your-username/simhastha-crowd-management.git
+cd simhastha-crowd-management
 ```
 
 ### 2. Backend Setup
@@ -119,7 +121,7 @@ The prediction model is in `scripts/train_visitor_model.py`:
 cd scripts
 python train_visitor_model.py
 ```
-This trains a **Gradient Boosting Regressor** on `Mahakumbh_Complete_Dataset.csv` and saves the model to `backend/app/core/visitor_model.pkl`.
+This trains a **Gradient Boosting Regressor** on `Simhastha_Complete_Dataset.csv` and saves the model to `backend/app/core/visitor_model.pkl`.
 
 ---
 
@@ -144,7 +146,7 @@ This trains a **Gradient Boosting Regressor** on `Mahakumbh_Complete_Dataset.csv
 
 ## Project Structure
 ```
-mahakumbh/
+simhastha/
 ├── backend/
 │   ├── app/
 │   │   ├── api/
@@ -178,7 +180,7 @@ mahakumbh/
 │   ├── train_visitor_model.py     # ML training pipeline
 │   ├── benchmark_routing_algorithms.py # A* vs Dijkstra benchmark
 │   └── start_services.ps1         # Windows dev start script
-├── Mahakumbh_Complete_Dataset.csv  # Historical Kumbh data
+├── Simhastha_Complete_Dataset.csv  # Historical Kumbh data
 ├── docker-compose.yml
 ├── .env.example
 └── README.md
@@ -187,5 +189,5 @@ mahakumbh/
 ---
 
 <p align="center">
-  Built with ❤️ for Mahakumbh 2028 — Protecting millions of pilgrims with AI.
+  Built with ❤️ for Simhastha — Protecting millions of pilgrims with AI.
 </p>

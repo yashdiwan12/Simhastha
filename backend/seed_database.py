@@ -72,7 +72,7 @@ def reset_db():
                     session.add(path1)
                     session.add(path2)
         session.commit()
-        print("Successfully seeded realistic Mahakumbh coordinates and paths!")
+        print("Successfully seeded realistic Simhastha coordinates and paths!")
     finally:
         session.close()
 

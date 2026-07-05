@@ -17,7 +17,7 @@ router = APIRouter()
 @router.get("/insights")
 async def get_insights():
     try:
-        df = pd.read_excel("../Mahakumbh_Complete_Dataset.csv", engine="openpyxl")
+        df = pd.read_excel("../Simhastha_Complete_Dataset.csv", engine="openpyxl")
         # Ensure we filter for Ujjain
         df = df[df['Location'].str.contains('Ujjain', case=False, na=False)]
         

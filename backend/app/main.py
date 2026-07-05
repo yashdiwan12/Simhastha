@@ -7,7 +7,7 @@ from app.core.state import state
 
 from fastapi.middleware.cors import CORSMiddleware
 
-app = FastAPI(title="Mahakumbh Crowd Routing Control Room")
+app = FastAPI(title="Simhastha Crowd Routing Control Room")
 
 app.add_middleware(
     CORSMiddleware,

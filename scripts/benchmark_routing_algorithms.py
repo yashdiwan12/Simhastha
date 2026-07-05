@@ -17,7 +17,7 @@ def main():
     else:
         print("ML Model not found. Using default multiplier of 1.0x")
         
-    print("\nGenerating massive Mahakumbh scale graph (5,000 nodes, 15,000 edges)...")
+    print("\nGenerating massive Simhastha scale graph (5,000 nodes, 15,000 edges)...")
     # Generate a random spatial graph (similar to a city grid with diagonal paths)
     # Using a random geometric graph to simulate physical proximity
     G = nx.random_geometric_graph(5000, 0.05, seed=42)
