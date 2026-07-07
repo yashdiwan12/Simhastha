@@ -4,7 +4,7 @@ __pycache__/
 *.venv
 .venv/
 *.db
-*.pkl
+# NOTE: visitor_model.pkl is intentionally tracked (65KB ML model needed to run the app)
 
 # Node
 node_modules/
