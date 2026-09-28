@@ -12,7 +12,7 @@ Built with **Next.js**, **FastAPI**, **Google Maps API**, and **Machine Learning
 |---------|-------------|
 | **Smart Routing Engine** | A* algorithm with dynamic edge weights. Benchmarked at **10.85ms** on a 5,000-node city graph. |
 | **Autonomous Rerouting** | If a sector's Safety Index drops below 30%, the engine automatically applies ∞ cost and reroutes. |
-| **ML Prediction** | Gradient Boosting Regressor trained on 40+ years of Kumbh data predicts **39.3M visitors** for 2028. |
+| **ML Prediction** | Benchmarks Random Forest and Gradient Boosting Regressors on 40+ years of Kumbh data; the lower-RMSE model is auto-selected and predicts **39.3M visitors** for 2028. |
 | **Google Maps Integration** | Road-snapped routes via Directions API, live Traffic Layer overlay, and walking ETA/distance. |
 | **Real-time WebSockets** | Live crowd fluctuations streamed at 2-second intervals to all connected dashboards. |
 | **Critical Alert System** | Aggressive toast notifications when stampede risk is detected. |
@@ -121,7 +121,7 @@ The prediction model is in `scripts/train_visitor_model.py`:
 cd scripts
 python train_visitor_model.py
 ```
-This trains a **Gradient Boosting Regressor** on `Simhastha_Complete_Dataset.csv` and saves the model to `backend/app/core/visitor_model.pkl`.
+This benchmarks **Random Forest** and **Gradient Boosting Regressors** on `Simhastha_Complete_Dataset.csv`, automatically selects the model with the lower RMSE, and saves the winning model to `backend/app/core/visitor_model.pkl`.
 
 ---
 
